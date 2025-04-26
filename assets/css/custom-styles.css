@@ -1,0 +1,500 @@
+/* Hide main menu on small screens and show mobile toggle */
+@media screen and (max-width: 768px) {
+    #nav {
+      display: none !important;
+    }
+    
+    #navPanelToggle {
+      display: inline-block !important;
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 1.5rem;
+      position: relative;
+      top: 0.5rem;
+    }
+  }
+  
+  /* Style the mobile menu */
+  #navPanel {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: #1e252d;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+  }
+  
+  #navPanel.active {
+    transform: translateX(0%);
+  }
+  
+  /* Reduce spacing between words/paragraphs on small screens */
+  @media screen and (max-width: 768px) {
+    p {
+      margin-bottom: 0.5rem !important;
+      line-height: 1.3;
+      word-spacing: -0.1em;
+    }
+  }
+  
+  /* Optional: Adjust other elements */
+  .row > * {
+    padding: 0.25rem !important;
+  }
+  /* Remove margins from the Mood Board section */
+.post {
+    margin: 0 !important; /* Remove top/bottom margins */
+    padding: 0 !important; /* Remove padding */
+  }
+  
+  /* Target images and text within the Mood Board */
+  .post .image {
+    margin: 0 !important; /* Remove image margins */
+    padding: 0 !important;
+  }
+  
+  .post .image.main img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .post p {
+    margin: 0 !important; /* Remove paragraph margins */
+    line-height: 1.3; /* Keep vertical spacing between sentences */
+  }
+  
+  /* Optional: Remove margins from the header */
+  .post .major {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  @media screen and (max-width: 768px) {
+    /* Remove margins on small screens */
+    .post {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  
+    .post .image {
+      margin: 0 !important;
+    }
+  
+    .post p {
+      margin: 0 !important;
+      line-height: 1.2; /* Tighter line spacing on mobile */
+    }
+  }
+  /* Override margins for Mood Board images on mobile */
+@media screen and (max-width: 736px) {
+    .post .image.fit,
+    .post .image.main {
+      margin: 0 !important; /* Remove all margins */
+      padding: 0 !important;
+    }
+    
+    .post .image.fit img,
+    .post .image.main img {
+      width: 100% !important;
+      height: auto !important;
+      margin: 0 !important;
+    }
+  }
+  /* Reduce Mood Board heading */
+.post header.major h1 {
+    font-size: 2.5rem !important; /* Half of original 5rem */
+  }
+  
+  /* Reduce gallery article titles */
+  .posts article header h2 {
+    font-size: 0.7rem !important; /* Half of 14pt (~0.7rem = 10.5pt) */
+  }
+  /* Remove margins from gallery images */
+.posts article .image.fit.uniform {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Ensure images take full width */
+  .posts article .image.fit.uniform img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Remove spacing between gallery items */
+  .posts article {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Force single column layout */
+  .posts {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important; /* Remove space between items */
+  }
+  /* Override grid columns */
+.posts .row {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .posts .row > * {
+    width: 100% !important; /* Force single column */
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  /* Mood Board Section */
+.post {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .post > * {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .post .image {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .post .image img {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+  
+  /* Gallery Section */
+  .posts {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .posts article {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .posts article .image {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .posts article .image img {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+  
+  /* Reduce heading sizes */
+  .post header.major h1 {
+    font-size: 2.5rem !important; /* Half of original 5rem */
+  }
+  
+  .posts article header h2 {
+    font-size: 7pt !important; /* Half of 14pt */
+  }
+  /* Mobile Menu */
+#navPanelToggle {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #nav {
+      display: none !important;
+    }
+    
+    #navPanelToggle {
+      display: inline-block;
+      background: transparent;
+      border: none;
+      color: #fff;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 1.5rem;
+      position: relative;
+      top: 0.5rem;
+    }
+    
+    #navPanel {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 250px;
+      height: 100%;
+      background: #1e252d;
+      padding: 2rem;
+      transition: transform 0.3s;
+      transform: translateX(100%);
+    }
+    
+    #navPanel.active {
+      transform: translateX(0%);
+    }
+  }
+  
+  /* Gallery & Mood Board */
+  .posts {
+    padding: 2rem 0;
+  }
+  
+  .category-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .category-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 !important;
+  }
+  
+  .posts article {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .posts article .image {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .posts article img {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+  
+  /* Mobile Adjustments */
+  @media screen and (max-width: 768px) {
+    .category-group {
+      flex-direction: column;
+    }
+    
+    .posts article {
+      width: 100% !important;
+    }
+    
+    .category-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Reduce spacing between paragraphs */
+  p {
+    margin-bottom: 0.5rem !important;
+    line-height: 1.3;
+    word-spacing: -0.1em;
+  }
+  
+  /* Remove margins from Mood Board */
+  .post {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .post .image {
+    margin: 0 !important;
+  }
+  
+  /* General Fixes */
+  .row.gtr-uniform {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  /* Reset default spacing */
+body,
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#wrapper {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+/* Remove top/bottom padding on mobile */
+@media screen and (max-width: 736px) {
+    #intro {
+      padding: 0 !important; /* Remove all padding */
+      margin: 0 !important;
+    }
+    
+    /* Center the artist image and title */
+    .header-container {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+  /* Remove margin from the artist image container */
+.artist-image-container {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Center the image */
+  .artist-image {
+    display: block;
+    margin: 0 auto !important;
+  }
+  /* Remove spacing from the header */
+#header {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  /* Hide unnecessary margins for the menu toggle */
+  #navPanelToggle {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  /* === GLOBAL RESETS === */
+body,
+html,
+#wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+/* === HEADER & INTRO SECTION === */
+#header {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#intro {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Remove top gap on mobile */
+@media screen and (max-width: 768px) {
+  #intro {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  /* Center artist image and title */
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+/* Artist image styling */
+.artist-image-container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.artist-image {
+  width: 100%;
+  max-width: 200px; /* Adjust size */
+  height: auto;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+/* === MOBILE MENU === */
+#navPanelToggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  #navPanelToggle {
+    padding: 1rem;
+  }
+}
+
+/* === GALLERY & CATEGORY GROUPS === */
+.posts {
+  padding: 2rem 0 !important;
+}
+
+.category-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.category-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.posts article {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.posts article .image {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.posts article img {
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  .category-group {
+    flex-direction: column;
+  }
+  
+  .category-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* === OTHER FIXES === */
+.row,
+.row > * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+ul.actions {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove default margins from paragraphs */
+p {
+  margin: 0.5rem 0 !important;
+  line-height: 1.3;
+  word-spacing: -0.1em;
+}
+
+/* Footer spacing */
+#footer {
+  margin-top: 2rem !important;
+}
